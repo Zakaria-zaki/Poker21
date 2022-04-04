@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="images/icon.png" sizes="16x16">
+    <title>Poker 21 - IW4</title>
+  </head>
+  <body>
+
+    <img id="him" class="him" src="./images/homepage.png" alt="">
+    <div class="buttons-start" id="buttons-start">
+      <button id="startGame" class="btn-green" style="margin-left:-10%;" onclick="startGame()">
+        Lancer le jeu
+      </button>
+    </div>
+
+    <div class="card-back" id="card-back" style="display:none;">
+        <img src="images/back-card.png" id="img-back" alt="">
+        <div id="formCard">
+          <label for="">Je souhaite tirer </label>
+          <input type="number" id="inputCard" min="0" max="52">
+          <button id="buttonformCard" class="btn-green-card" onclick="cardDeals()">cartes</button>
+        </div>
+      </div>
+      <div id="game" style="display:none;">
+        <div id="party-information" style="display:none;"></div>
+        <div id='cards-deal' style="display:inline-block;"></div>
+      </div>
+    
+
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <div class="close">Fermer</div>
+      </div>  
+      <div id="confetti-wrapper"></div>
+    </div>
+
+    <script src="./scripts/deck.js"></script>
+    <script src="./scripts/effectGame.js"></script>
+    <script src="./scripts/playAgain.js"></script>
+    <script src="./scripts/stopGame.js"></script>
+    <script src="./scripts/game.js"></script>
+    <script src="./scripts/index.js"></script>
+
+
+    
+   
+  </body>
+</html>
+
+        
+   
+    
+        
+       
+   
+  

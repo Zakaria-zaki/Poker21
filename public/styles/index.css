@@ -1,0 +1,314 @@
+
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: url('../images/table.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+@font-face {
+  font-family: "casino";
+  src: url("../fonts/budmo jiggler.ttf");
+ }
+
+#modal-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header, h1 {
+  position: absolute;
+  left: 40%;
+  top: 10%;
+  color: #fff;
+  font-size: 70px;
+}
+.header, .buttons-nav {
+  position : inline-block;
+
+}
+
+#party-information {
+  left: 10%;
+  top: -10%;
+}
+
+
+.btn-align {
+  display: flex;
+  padding-left: 30%;
+  padding-top: 10%;
+}
+
+/*
+.home {
+   display: flex; 
+  padding-top: 10%;
+  
+}
+*/
+.him {
+  display: block;
+  width: 45%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+.card {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+   transform-style: preserve-3d;
+   transform-origin: center right;
+   transition: transform 1s;
+   border-radius: 25px;
+ }
+ 
+  .btn-green {
+  
+    margin-left: 5%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+
+  }
+ 
+ 
+ #cards-deal {
+  display: inline;
+  padding-bottom: 44%;
+  padding-left: 200px;
+ }
+
+
+ .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.header {
+ 
+  padding: 5%;
+}
+
+.card-back {
+  padding: 5%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+}
+
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.card-image {
+  width: 200px;
+}
+.close {
+  color: #000;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#game {
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  margin-left: 10%;
+}
+
+@keyframes confettiRain {
+  0% {
+    opacity: 1;
+    margin-top: -100vh;
+    margin-left: -200px;
+  } 
+  
+  100% {
+    opacity: 1;
+    margin-top: 100vh;
+    margin-left: 200px;
+  }
+}
+
+.confetti {
+  opacity: 0;
+  position: absolute;
+  width: 1rem;
+  height: 1.5rem;
+  transition: 500ms ease;
+  animation: confettiRain 5s infinite;
+}
+
+#confetti-wrapper {
+   overflow: hidden !important;
+}
+
+.buttons-start {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 45%;
+
+}
+input {
+ 
+    box-sizing: border-box;
+    margin-left: 5%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+  .btn-green-card {
+    margin-left: 5%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+
+  }
+#img-back {
+  width: 200px;
+}
+
+#card-image {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  0%   { left:0px; }
+  100% { left:500px; }
+}
+
+@media only screen and (max-width: 700px) {
+  .him {
+    margin-top: 20%;
+    width: -webkit-fill-available;
+  }
+  .buttons-start {
+    
+    padding-left: 40%;
+  }
+
+  .card-back {
+    padding: 15%;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20%;
+  }
+  #img-back {
+    width: 150px;
+  }
+  
+  
+  .buttons-start {
+    padding-left: 40%;
+  }
+
+  .btn-green {
+    margin-left: 5%;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+
+  }
+  #game {
+    color: #ffffff;
+    text-align: left;
+    font-size: 10px;
+    /* margin-left: 10%; */
+  }
+
+  #party-information {
+    left: 0%;
+    top: -10%;
+  }
+
+  #cards-deal {
+    padding-left: 100px;
+  }
+  
+  #card-image {
+    width: 100px; 
+  }
+  @keyframes slidein {
+    0%   { left:0px; }
+    100% { left:200px; }
+  }
+  
+  
+}
